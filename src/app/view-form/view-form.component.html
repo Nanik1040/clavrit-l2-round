@@ -1,0 +1,15 @@
+<h1>View Student Form</h1>
+<table class="student-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of studData">
+      <td>{{ data.name }}</td>
+      <td>{{ data.age }}</td>
+    </tr>
+  </tbody>
+</table>

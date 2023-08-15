@@ -1,0 +1,7 @@
+<div style="font-size: 2em; color: gray">
+  Number of counters: <input style="font-size: 1em; color: green" [(ngModel)]="numCounters"/>
+</div>
+
+<div class="row mt-2 p-2">
+  <app-counter  *ngFor="let c of counters; index as i" [initialCount]="c" [name]="'Counter ' + (i + 1)" class="col-xs p-1"></app-counter>
+</div>

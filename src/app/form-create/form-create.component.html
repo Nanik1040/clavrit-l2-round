@@ -1,0 +1,23 @@
+<h1 class="stud-header">Create Student Form</h1>
+<div class="stud-div">
+  <form #studForm="ngForm" (ngSubmit)="submitData(studForm)">
+    <label for="name">Name:</label>
+    <input
+      class="name-input"
+      type="name"
+      name="name"
+      [(ngModel)]="name"
+      required
+    /><br />
+    <label for="age">Age:</label>
+    <input
+      class="age-input"
+      type="name"
+      name="age"
+      [(ngModel)]="age"
+      required
+    /><br />
+    <button class="sub-button" type="submit">Submit</button>
+  </form>
+  <div></div>
+</div>
